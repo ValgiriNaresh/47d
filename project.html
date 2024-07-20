@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        body{
+            background-color: gray;
+        }
+        .head{
+            color: yellow;
+            display: inline-block;
+            margin-top: 1%;
+            margin-left: 5%;
+        }
+        .class1{
+            height: 60px;
+            width: 1550px;
+            background-color: black;
+        }
+        .img1{
+            margin-top: -2px;
+            width: 1550px;
+            height: 750px;
+        }
+        .class45{
+            position: absolute;
+            margin-left: 200px;
+            margin-top: 35px;
+        }
+        nav{
+            position: absolute;
+            font-size: medium;
+        }
+        nav a{
+            position: absolute;
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .a1{
+            margin-top: -50px;
+            margin-left: 850px;
+        }
+        .a2{
+            margin-top: -50px;
+            margin-left: 950px; 
+        }
+        .a3{
+            margin-top: -50px;
+            margin-left: 1050px;
+            width: 95px;
+        }
+        .a4{
+            margin-top: -50px;
+            margin-left: 1200px;  
+        }
+        div a:hover{
+            color: black;
+            background-color: yellow;
+            height: 45px;
+        }
+        .color{
+            display: grid;
+        }
+        .div1{
+            color:white ;
+            font-size:45px;
+            margin-top:-485px;
+            margin-left: 550px;
+            display: inline-block;
+        }
+        .div2{
+            color: yellow;
+            font-size: 45px;
+            margin-top:-485px;
+            margin-left:690px ;
+            display: inline-block;
+        }
+        .div3{
+            color: white;
+            font-size: 40px;
+            margin-top:-485px;
+            margin-left: 930px;
+            font-size: 45px;
+            display: inline-block;
+        }
+        p{
+            color:white ;
+            margin-left: 690px;
+            font-weight: 20px;
+            margin-top: -420px;
+            font-size: x-large;
+        }
+        .button1{
+            background-color:rgb(222, 222, 22) ;
+            border: 16px  yellow;
+            color: white;
+            width: 120px;
+            height: 45px;
+            margin-left: 750px;
+            margin-top: -360px;
+            font-size: 10px;
+        }
+
+        .color1{
+            background-color: gainsboro;
+            width: 1550px;
+            height: 1200px;
+            margin-top: -20px;
+        }
+        .class2{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            background-color: white;
+            border: 2px solid white ;
+            list-style-type: none;
+            width: 350px;
+            height: 400px;
+            position:absolute;
+            margin-top: -25px;
+            margin-left: 100px;
+        }
+        .li1{
+            text-align: center;
+            margin-top:10px ;
+            font-size: small;
+        }
+        .li2{
+            padding: 5px;
+            margin-top :-1px;
+            margin-left: 98px;
+            background-color: yellow;
+            font-size: small;
+            height: 41px;
+            text-align: center;
+            width: 151px;
+            height: 30px;
+        }
+        .class3 > button{
+            width: 230px;
+            height: 30px;
+            position:absolute;
+        }
+        .button2{
+            margin-left: 65px;
+            margin-top: -80px;
+        }
+        .button3{
+            margin-left: 65px;
+            margin-top: -60px;
+        }
+        .button4{
+            margin-left: 65px;
+            margin-top: -40px;
+        }
+        .button5{
+            margin-left: 65px;
+            margin-top: -20px;
+        }
+        .class4{
+            position: absolute;
+        }
+        .para{
+            margin-top: 250px;
+            width: 353px;
+            height: 90px;
+            color: black;
+            background-color: yellow;
+            margin-left:-2px;
+            margin-top: 312px;
+        }
+        .class5{
+            position: absolute;
+        }
+        .button6{
+            border: 2px solid yellow;
+            margin-top: 340px;
+            margin-left: 120px;
+            background-color:rgb(252, 252, 197);
+            width: 120px;
+            height: 25px;
+            text-align: center;
+        }
+        .class6{
+            width: 350px;
+            height: 404px;
+            background-color:white;
+            position:absolute; 
+            margin-top:-1230px ;
+            margin-left: 585px;
+        }
+        .img2{
+            position: absolute;
+            width: 350px;
+            height: 314px;
+        }
+        .class7{
+            background-color: green;
+            position: absolute;
+            width: 350px;
+            height: 90px;
+            margin-right :30px;
+            margin-top: -916px;
+            margin-left: 585px;
+        }    
+        .hgm{
+            position: absolute;
+            margin-top: 35px;
+            color: white;
+            margin-right: -1600px;
+            margin-left: 30px;
+            font-size: medium;
+        }
+        .hgm1{
+            position: absolute;
+            margin-top: 35px;
+            color: white;
+            margin-right: -1600px;
+            margin-left: 260px;
+            font-size: medium;
+        }
+        .class8{
+            width: 350px;
+            height: 404px;
+            background-color:red;
+            position:absolute; 
+            margin-top:-1230px ;
+            margin-left: 1075px;
+        }
+        .img3{
+            position: absolute;
+            width: 350px;
+            height: 314px;
+        }
+        .hgm2{
+            color: white;
+            position: absolute;
+            width: 350px;
+            height: 90px;
+            margin-right :30px;
+            margin-top: -880px;
+            margin-left: 1105px;
+            font-size: medium;
+        }
+        .hgm3{
+            color:white;
+            position: absolute;
+            width: 350px;
+            height: 90px;
+            margin-right :30px;
+            margin-top: -880px;
+            margin-left: 1325px;
+            font-size: medium;
+        }
+        .hr1{
+            width: 1322px;
+            margin-top :-700px ;
+            margin-left: 102px;
+        }
+        .hr2{
+            position: absolute;
+            display: inline-block;
+            margin-left:550px ;
+            margin-top: -23px;
+            background-color: gainsboro;
+            width: 420px;
+            text-align: center;
+        }
+        .class10{
+            background-color: white;
+            position: absolute;
+            width: 254px;
+            height: 370px;
+            border: 2px solid white;
+            margin-left: 100px;
+            margin-top: 40px;
+        }
+        .hr3{
+            position: absolute;
+            margin-top: 245px;
+            margin-left:120px ;
+        }
+        .hr4{
+            position: absolute;
+            margin-top: 315px;
+            margin-left:120px ;
+            color: rgba(148, 118, 118, 0.432);
+        }
+        .class11{
+            display: flex;
+            position: absolute;
+            border-top: 2px solid rgb(142, 139, 139);
+            width: 256px;
+            margin-left: 100px;
+            margin-top: 350px;
+        }
+        .img4{
+            position: absolute;
+            height: 40px;
+            margin-top: 10px;
+            margin-left: -42px;
+        }
+        .class12{
+            position: absolute;
+            border-left: 2px solid rgb(142, 139, 139);
+            height: 60px;
+            margin-left: 58px;
+        }
+        .hr5{
+            margin-left: -100px;
+            margin-top: 20px;
+        }
+        .class13{
+            border-left:2px solid rgb(142, 139, 139) ;
+            height: 60px;
+            margin-left: 193px;
+        }
+        .img5{
+            position: absolute;
+            margin-left: 21px;
+            margin-top: 15px;
+        }
+        .class14{
+            background-color: white;
+            position: absolute;
+            width: 254px;
+            height: 370px;
+            border: 2px solid white;
+            margin-left: 455px;
+            margin-top: 20px;
+        }
+        .hr6{
+            position: absolute;
+            margin-left: 480px;
+            margin-top: 225px;
+        }
+        .hr7{
+            position: absolute;
+            margin-top: 295px;
+            margin-left:480px ;
+            color: rgb(142, 138, 138);
+        }
+        .class15{
+            display: flex;
+            position: absolute;
+            border-top: 2px solid rgb(142, 139, 139);
+            width: 256px;
+            margin-left: 455px;
+            margin-top: 331px;
+        }
+        .img7{
+            margin-left: -43px;
+            margin-top: 18px;
+        }
+        .class16{
+            position: absolute;
+            border-left: 2px solid rgb(142, 139, 139);
+            height: 60px;
+            margin-left: 60px;
+        }
+        .hr8{
+            margin-left: -100px;
+            margin-top: 20px;
+        }
+        .class17{
+            border-left:2px solid rgb(142, 139, 139) ;
+            height: 60px;
+            margin-left: 195px;
+        }
+        .img8{
+            margin-left: 20px;
+            margin-top: 15px;
+        }
+        .class18{
+            background-color: white;
+            width: 254px;
+            height: 370px;
+            border: 2px solid white;
+            margin-left: 813px;
+            margin-top: 0px;
+        }
+        .hr9{
+            position: absolute;
+            margin-left: 833px;
+            margin-top: -170px;
+        }
+        .hr10{
+            position: absolute;
+            margin-left: 833px;
+            margin-top: -100px;
+            color: rgb(142, 139, 139);
+        }
+        .class19{
+            display: flex;
+            position: absolute;
+            border-top: 2px solid rgb(142, 139, 139);
+            width: 256px;
+            margin-left: 812px;
+            margin-top: -61px;
+        }
+        .class20{
+            border-left:2px solid rgb(142, 139, 139) ;
+            height: 60px;
+            margin-left: 65px;
+        }
+        .img9{
+            margin-left: -45px;
+            margin-top: 15px;
+        }
+        .class21{
+            border-left:2px solid rgb(142, 139, 139) ;
+            height: 60px;
+            margin-left: 125px;
+        }
+        .hr11{
+            position: absolute;
+            margin-left: -95px;
+            margin-top: 20px;
+        }
+        .img10{
+            margin-top: 15px;
+            margin-left: 20px;
+        }
+        .class22{
+            background-color: white;
+            position: absolute;
+            width: 254px;
+            height: 370px;
+            border: 2px solid white;
+            margin-left: 1165px;
+            margin-top: -390px;
+        }
+        .hr12{
+            position: absolute;
+            margin-left: 1185px;
+            margin-top: -185px;
+        }
+        .hr13{
+            position: absolute;
+            margin-left: 1185px;
+            margin-top: -120px;
+            color: rgb(142, 139, 139) ;
+        }
+        .class23{
+            display: flex;
+            position: absolute;
+            border-top: 2px solid rgb(142, 139, 139);
+            width: 256px;
+            margin-left: 1165px;
+            margin-top: -77px;
+        }
+        .class24{
+            border-left: 2px solid rgb(142, 139, 139);
+            height: 60px;
+            margin-left: 60px;
+        }
+        .img11{
+            margin-left: -45px;
+            margin-top: 15px;
+        }
+        .class25{
+            border-left: 2px solid rgb(142, 139, 139);
+            height: 60px;
+            margin-left: 130px;
+        }
+        .hr14{
+            margin-left: -100px;
+            margin-top: 20px;
+        }
+        .img12{
+            margin-left: 20px;
+            margin-top: 15px;
+        }
+        .class26{
+            position: absolute;
+        }
+        .grap{
+            position: absolute;
+            margin-top: 100px;
+            width:1200px ;
+            font-size:14px;
+            margin-left: -1000px;
+            text-align-last:center ;
+        }
+        .color2{
+            background-color: white;
+            width: 1550px;
+            height: 1000px;
+            margin-top: 170px;
+        }
+        .hr15{
+            width: 1326px;
+            margin-top :100px ;
+            margin-left: 100px;
+            position: absolute;
+        }
+        .hr16{
+            margin-top :82px ;
+            margin-left: 565px;
+            position: absolute;
+            font-weight: lighter;
+            background-color: white;
+            width: 400px;
+            text-align: center;
+        }
+        .class27{
+            position:absolute;
+            display: flex;
+            border: 2px solid rgb(161, 154, 154);
+            width: 590px;
+            height: 250px;
+            margin-left: 100px;
+            margin-top: 200px;
+        }
+        .img13{
+            position: absolute;
+            width: 220;
+            height: 250px;
+        }
+        .hr17{
+            margin-left: 313px;
+            font-size: 14px;
+            margin-top: 65px;
+            text-align: start;
+        }
+        .class28{
+            display: flex;
+            position: absolute;
+            border-top: 2px solid rgb(142, 139, 139);
+            width: 313px;
+            margin-top: -608px;
+            margin-left: 379px;
+        }
+        .class29{
+            border-left: 2px solid rgb(142, 139, 139);
+            height: 60px;
+            margin-left: 80px;
+            margin-top: 0px;
+        }
+        .img14{
+            margin-top: 15px;
+            margin-left: -50px;
+        }
+        .hr18{
+            margin-left: -108px;
+            margin-top: 20px; 
+        }
+        .class30{
+            border-left: 2px solid rgb(142, 139, 139) ;
+            height: 60px;
+            margin-left: 160px;
+            margin-top: 0px;
+        }
+        .img15{
+            margin-top: 15px;
+            margin-left: 25px;
+        }
+        .class31{
+            display: flex;
+            position: absolute;
+            border: 2px solid rgb(162, 155, 155);
+            width: 590px;
+            height: 250px;
+            margin-top: -799px;
+            margin-left: 830px;
+        }
+        .img16{
+            position: absolute;
+            width: 220;
+            height: 250px;
+        }
+        .hr19{
+            position: absolute;
+            margin-left: 310px;
+            margin-top: 70px;
+            font-size: 14px;
+            text-align: start;
+        }
+        .class32{
+            border-top: 2px solid rgb(142, 139, 139);
+            width: 313px;
+            margin-top: -608px;
+            margin-left: 1109px;
+        }
+        .img17{
+            margin-top: 15px;
+            margin-left: -50px;
+        }
+        .class33{
+            border-left:2px solid rgb(142, 139, 139) ;
+            height: 60px;
+            margin-left: 70px;
+        }
+        .hr20{
+            margin-left: -110px;
+            margin-top:20px ;
+        }
+        .class34{
+            position: absolute;
+            border-left: 2px solid rgb(145, 140, 140);
+            height: 60px;
+            margin-left: 245px;
+            margin-top: -60px;
+        }
+        .img18{
+            position: absolute;
+            margin-left: 270px;
+            margin-top: -45px;
+        }
+        .class35{
+            display: flex;
+            position: absolute;
+            border: 2px solid rgb(162, 155, 155);
+            width: 590px;
+            height: 250px;
+            margin-left: 100px;
+            margin-top: 100px;
+        }
+        .hr21{
+            font-size: 14px;
+            margin-left: 35px;
+            margin-top: 65px;
+        }
+        .class36{
+            border-top: 2px solid rgb(148, 144, 144);
+            margin-left: 379px;
+            margin-top: 291px;
+            width: 314px;
+        }
+        .img19{
+            margin-left:-50px;
+            margin-top:15px ;
+        }
+        .class37{
+            border-left:2px solid rgb(148, 144, 144) ;
+            height: 60px;
+            margin-left: 75px;
+        }
+        .hr22{
+            margin-left: -105px;
+            margin-top: 25px;
+        }
+        .class38{
+            position:absolute;
+            border-left: 2px solid rgb(148, 144, 144);
+            margin-left: 235px;
+            height: 60px;
+            margin-top:-60px;
+        }
+        .img20{
+            position: absolute;
+            margin-left: 265px;
+            margin-top: -45px;
+        }
+        .class39{
+            display: flex;
+            position: absolute;
+            border: 2px solid rgb(162, 155, 155);
+            width: 590px;
+            height: 250px;
+            margin-left: 830px;
+            margin-top: -252px;
+        }
+        .hr23{
+            margin-left: 25px;
+            margin-top: 60px;
+            font-size: 14px;
+        }
+        .class40{
+            border-top: 2px solid rgb(143, 139, 139);
+            width: 314px;
+            margin-left: 1108px;
+            margin-top: -60px;
+        }
+        .img21{
+            margin-left: -45px;
+            margin-top: 15px;
+        }
+        .class41{
+            border-left: 2px solid rgb(146, 142, 142);
+            height: 60px;
+            margin-left: 68px;
+            margin-top: -1px;
+        }
+        .hr24{
+            margin-top: 20px;
+            margin-left: -110px;
+        }
+        .class42{
+            position: absolute;
+            border-left:2px solid rgb(146, 142, 142);
+            height: 60px;
+            margin-left: 245px;
+            margin-top: -59px;
+        }
+        .img22{
+            position: absolute;
+            margin-left: 268px;
+            margin-top: -45px;
+        }
+        footer{
+            margin-top:120px ;
+            height: 50px;
+            color: white;
+            text-align: center;
+            padding-top:25px ;
+        }
+        </style>
+</head>
+<body>
+    <div class="class">
+        <div class="class1">
+            <h2 class="head">HOLIDAY</h2>
+        </div>
+        <nav>
+                <div>
+                    <a class="a1" href="#">HOME</a>
+                </div>
+                <div>
+                    <a class="a2" href="#">ABOUT</a>
+                </div>
+                <div>
+                    <a class="a3" href="#">OUR TOURS</a>
+                </div>
+                <div>
+                    <a class="a4" href="#">CONTACTS</a>
+                </div>
+        </nav>
+        <div>
+            <img class="img1" src="./project imeges/banner-1.jpg" alt="">
+        </div>
+        <div class="color">
+            <h3 class="div1">FIND</h3>
+            <h3 class="div2">THE BEST</h3>
+            <h3 class="div3">PLACE</h3>
+            <p>FOR YOUR HOLIDAYS</p>
+            <button class="button1">LEARN MORE</button>
+        </div>
+
+        <div class="color1">
+            <div class="class2">
+                <li class="li1">HOTEL</li>
+                <li class="li2">CAR RENTAL</li>
+                <div class="class3">
+                    <button class="button2">--Select Hotel--</button>
+                    <br><br>
+                    <button class="button3">--Check in date--</button>
+                    <br><br>
+                    <button class="button4">--Check out date--</button>
+                    <br><br>
+                    <button class="button5">--Guests--</button>
+                </div>
+                <div class="class4">
+                    <h1 class="para"></h1>
+                </div>
+                <div class="class5">
+                    <input class="button6" type="text" placeholder="CHECK NOw">
+                </div>
+            </div>
+        </div>
+
+        <div class="class6">
+            <img class="img2" src="./project imeges/index-01.jpg" alt="">
+        </div>
+        <div class="class7">
+            <p class="hgm">NEW YORK</p>
+            <p class="hgm1">$6,600</p>
+        </div>
+        
+        <div class="class8">
+            <img class="img3" src="./project imeges/index-02.jpg" alt="">
+        </div>
+        <div class="class9">
+            <p class="hgm2">PARIS</p>
+            <p class="hgm3">$4,200</p>
+        </div>
+        <hr class="hr1">
+        <h1 class="hr2">LOREM IPSUM DOLOR</h1>
+        <br>
+        <div class="class10">
+            <img  src="./project imeges/index-03.jpg" alt="">
+        </div>
+        <div>
+            <h5 class="hr3">PROIN GRAVIDA NIBHVEL <br>LOREM QUIS BIND</h5>
+            <h5 class="hr4">26 MARCH 2016</h5>
+        </div>
+        <div class="class11">
+            <div class="class12">
+                <img class="img4" src="./project imeges/heart.svg" alt="" width="25px" height="25px">
+            </div>
+            <div class="class13">
+                <h4 class="hr5">TRAVEL</h4>
+            </div>
+            <div>
+                <img class="img5" src="./project imeges/create.svg" alt="" width="25px" height="25px">
+            </div>
+        </div>
+        <br>
+        <div class="class14">
+            <img class="img6" src="./project imeges/index-04.jpg" alt="" >
+        </div>
+        <div>
+            <h5 class="hr6">PROIN GRAVIDA NIBHVEL <br>LOREM QUIS BIND</h5>
+            <h5 class="hr7">26 MARCH 2016</h5>
+        </div>
+        <div class="class15">
+            <div class="class16">
+                <img class="img7" src="./project imeges/heart.svg" alt="" width="25px" height="25px">
+            </div>
+            <div class="class17">
+                <h4 class="hr8">TRAVEL</h4>
+            </div>
+            <div>
+                <img class="img8" src="./project imeges/create.svg" alt="" width="25px" height="25px">
+            </div>
+        </div>
+        <br>
+        <div class="class18">
+            <img src="./project imeges/index-05.jpg" alt="">
+        </div>
+        <div>
+            <h5 class="hr9">PROIN GRAVIDA NIBHVEL <br>LOREM QUIS BIND</h5>
+            <h5 class="hr10">26 MARCH 2016</h5> 
+        </div>
+        <div class="class19">
+            <div class="class20">
+                <img class="img9" src="./project imeges/heart.svg" alt="" width="25px" height="25px">
+            </div>
+            <div class="class21">
+                <h4 class="hr11">TRAVEL</h4>
+            </div>
+            <div>
+                <img class="img10" src="./project imeges/create.svg" alt="" width="25px" height="25px">
+            </div>
+        </div>
+        <br>
+        <div class="class22">
+            <img src="./project imeges/index-06.jpg" alt="">
+        </div>
+        <div>
+            <h5 class="hr12">PROIN GRAVIDA NIBHVEL <br>LOREM QUIS BIND</h5>
+            <h5 class="hr13">26 MARCH 2016</h5> 
+        </div>
+        <div class="class23">
+            <div class="class24">
+                <img class="img11" src="./project imeges/heart.svg" alt="" width="25px" height="25px">
+            </div>
+            <div class="class25">
+                <h4 class="hr14">TRAVEL</h4>
+            </div>
+            <div>
+                <img class="img12" src="./project imeges/create.svg" alt="" width="25px" height="25px">
+            </div>
+            <br>
+            <div class="class26">
+                <h4 class="grap">Holiday is free Bootstrap v3.3.5responsive template for tour and travel website.You can download and use this layout for any pupose. you do not need to provide. <br>
+                    <br>a credit link to us if you have any question.feel free to <text-color style="color:#7373da;">contact us.</text-color> Credit goes to <text-color style="color:#7373da;"> Unspash</text-color> for images used in this template
+                </h4>
+            </div>
+        </div>
+        <div class="color2">
+        <hr class="hr15">
+        <h1 class="hr16">POPULAR PACKAGES</h1>
+
+        <div class="class27">
+            <img class="img13" src="./project imeges/index-07.jpg" alt="">
+            <h4 class="hr17">Provin gravida nibhvell velit auctor  
+                <br>aliquet. Aenean sollicitudin,lorem
+                <br> quis bibendum auctor,nisi elit
+                <br> consequat ipsum</h4>
+        </div>
+        </div>
+        <div class="class28">
+        <div class="class29">
+            <img class="img14" src="./project imeges/heart.svg" alt="" width="25px" height="25px">
+        </div>
+        <div class="class30">
+            <h4 class="hr18">TRAVEL</h4>
+        </div>
+        <div>
+            <img class="img15" src="./project imeges/create.svg" alt="" width="25px" height="25px">
+        </div>
+        </div>
+
+        <div class="class31">
+            <img class="img16" src="./project imeges/index-08.jpg" alt="" srcset="">
+            <h4 class="hr19">Provin gravida nibhvell velit auctor  
+                <br>aliquet. Aenean sollicitudin,lorem
+                <br> quis bibendum auctor,nisi elit
+                <br> consequat ipsum</h4>
+        </div>
+        <div class="class32">
+        <div class="class33">
+            <img class="img17" src="./project imeges/heart.svg" alt="" width="25px" height="25px">
+        </div>
+        <div class="class34">
+            <h4 class="hr20">TRAVEL</h4>
+        </div>
+        <div>
+            <img class="img18" src="./project imeges/create.svg" alt="" width="25px" height="25px">
+        </div>
+        </div>
+
+        <div class="class35">
+            <img src="./project imeges/index-09.jpg" alt="">
+            <h4 class="hr21">Provin gravida nibhvell velit auctor  
+                <br>aliquet. Aenean sollicitudin,lorem
+                <br> quis bibendum auctor,nisi elit
+                <br> consequat ipsum</h4>
+        </div>
+        <div class="class36">
+            <div class="class37">
+                <img class="img19" src="./project imeges/heart.svg" alt="" width="25px" height="25px">
+            </div>
+            <div class="class38">
+                <h4 class="hr22">TRAVEL</h4>
+            </div>
+            <div>
+                <img class="img20" src="./project imeges/create.svg" alt="" width="25px" height="25px">
+            </div>
+        </div>
+
+        <div class="class39">
+            <img src="./project imeges/index-10.jpg" alt="">
+            <h4 class="hr23">Provin gravida nibhvell velit auctor  
+                <br>aliquet. Aenean sollicitudin,lorem
+                <br> quis bibendum auctor,nisi elit
+                <br> consequat ipsum</h4>
+        </div>
+        <div class="class40">
+            <div class="class41">
+                <img class="img21" src="./project imeges/heart.svg" alt=""width="25px" height="25px">
+            </div>
+            <div class="class42">
+                <h4 class="hr24">TRAVEL</h4>
+            </div>
+            <div>
+                <img class="img22" src="./project imeges/create.svg" alt=""width="25px" height="25px">
+            </div>
+        </div>
+            
+    </div>
+    
+    <footer style="background-color: black;">Copyright &copy; 2084 your Company Name | Designed by <span style="color: yellow;">templatemo</span></footer>
+</body>
+</html>
